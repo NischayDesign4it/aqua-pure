@@ -1,6 +1,10 @@
+import 'package:aqua_pure/features/presentations/screens/Dashboard/Dashboard_mobile.dart';
+import 'package:aqua_pure/features/presentations/screens/main_interface.dart';
 import 'package:flutter/material.dart';
 import 'package:aqua_pure/utils/constants/colors.dart';
 import 'package:aqua_pure/utils/constants/sizes.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'dart:math' as math;
 
@@ -73,7 +77,9 @@ class LoginPage extends StatelessWidget {
                                 ),
                                 backgroundColor: TColors.appBarColor,
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                Get.to(() => DashBoardMobile());
+                              },
                               child: Text(
                                 "Login",
                                 style: TextStyle(

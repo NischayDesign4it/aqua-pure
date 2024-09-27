@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 import 'package:iconsax/iconsax.dart';
 
-import 'Dashboard.dart';
+import '../../../common/QAppBar.dart';
+import '../../../common/sideMenu.dart';
+import 'Dashboard/Dashboard.dart';
 
 class ManualControl extends StatefulWidget {
   const ManualControl({super.key});
@@ -29,7 +31,7 @@ class _ManualControlState extends State<ManualControl> {
         appBar: QAppBar(
           notificationIcon: Iconsax.notification,
           userIcon: Iconsax.user,
-          title: 'Real Time Data',
+          title: 'Manual Control',
           menuIcon: Iconsax.menu_1,
           onPressed: () {
             _scaffoldKey.currentState?.openDrawer();

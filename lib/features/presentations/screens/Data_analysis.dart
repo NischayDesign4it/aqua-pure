@@ -1,8 +1,10 @@
+import 'package:aqua_pure/common/sideMenu.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../common/QAppBar.dart';
 import '../../../utils/constants/colors.dart';
-import 'Dashboard.dart';
+import 'Dashboard/Dashboard.dart';
 
 class DataAnalysis extends StatefulWidget {
   DataAnalysis({super.key});
@@ -31,6 +33,7 @@ class _DataAnalysisState extends State<DataAnalysis> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
+      drawer: sideMenu(),
       appBar: QAppBar(
         menuIcon: Iconsax.menu_1,
         onPressed: () {

@@ -1,8 +1,11 @@
-import 'package:aqua_pure/features/presentations/screens/Dashboard.dart';
+import 'package:aqua_pure/features/presentations/screens/Dashboard/Dashboard.dart';
 import 'package:aqua_pure/utils/constants/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+
+import '../../../common/QAppBar.dart';
+import '../../../common/sideMenu.dart';
 
 class PurifierManager extends StatelessWidget {
   PurifierManager({super.key});
@@ -14,6 +17,7 @@ class PurifierManager extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
+      drawer: sideMenu(),
         appBar: QAppBar(
           menuIcon: Iconsax.menu_1, onPressed: () { _scaffoldKey.currentState?.openDrawer(); },
           notificationIcon: Iconsax.notification,
