@@ -26,6 +26,9 @@ dependencies:
   syncfusion_flutter_charts: ^27.1.52
   syncfusion_flutter_datagrid: ^27.1.52
   flutter_native_splash: ^2.4.1
+  flutter_launcher_icons: ^0.14.1
+  path_provider: ^2.0.13
+
 
 
 dev_dependencies:
@@ -37,10 +40,20 @@ dev_dependencies:
 
 
 flutter:
-
-
   uses-material-design: true
 
   assets:
     - assets/
 
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/Group.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/Group.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"

@@ -3,6 +3,7 @@ class Assets {
   Assets._();
 
   static const String assetsBranding = 'assets/Branding.png';
+  static const String assetsGroup = 'assets/Group.png';
   static const String assetsHMIR = 'assets/HMIR.png';
 
 }
